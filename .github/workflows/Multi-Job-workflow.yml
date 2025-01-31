@@ -1,0 +1,13 @@
+name: Multi-Job Workflow
+on: push
+jobs: 
+  job-on-ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Job on ubuntu
+        run: echo "job is running on ubuntu"
+  job-on-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Job on windows
+        run: echo "job is running on windows"  
