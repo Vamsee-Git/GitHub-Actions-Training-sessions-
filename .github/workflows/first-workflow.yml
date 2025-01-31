@@ -6,4 +6,8 @@ jobs:
     steps:
       - name: Print statement
         run: echo "Display the workflow"
-    
+  job2:
+    runs-on: windows-latest
+    steps:
+      - name: Print statement
+        run: echo "Display the workflow"  
