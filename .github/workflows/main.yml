@@ -1,0 +1,22 @@
+name: Setup Java and Maven
+on:
+  push
+jobs:
+  setup_java_maven:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+      - name: Setup Java JDK
+        uses: actions/setup-java@v4.7.0
+        with:
+          java-version:'17'
+          distribution:'temurin'
+      - run: mvn --batch-mode --update-snapshots verify
+      - run: mkdir staging && cp target/*.jar staging
+      - uses: actions/upload-artifact@v4
+        with:
+         name: Package
+         path: staging
+          
+    
