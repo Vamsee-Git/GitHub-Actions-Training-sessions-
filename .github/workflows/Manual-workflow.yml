@@ -1,5 +1,5 @@
-name: Push Workflow
-on: push
+name: Manual triggering Workflow
+on: workflow_dispatch
 jobs: 
   job-on-windows:
     runs-on: windows-latest
