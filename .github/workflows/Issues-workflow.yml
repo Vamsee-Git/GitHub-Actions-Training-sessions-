@@ -1,5 +1,5 @@
 name: Issues Workflow
-on: issues
+on: push
 jobs: 
   job-on-windows:
     runs-on: windows-latest
