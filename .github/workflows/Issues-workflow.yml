@@ -1,4 +1,4 @@
-name: Issues Workflow
+name: Push Workflow
 on: push
 jobs: 
   job-on-windows:
