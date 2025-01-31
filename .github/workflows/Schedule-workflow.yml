@@ -1,5 +1,7 @@
-name: Manual triggering Workflow
-on: workflow_dispatch
+name: schedule Workflow
+on:
+  schedule:
+    - cron: '* * * * *'
 jobs: 
   job-on-windows:
     runs-on: windows-latest
