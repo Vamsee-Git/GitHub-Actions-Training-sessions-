@@ -1,5 +1,5 @@
-name: Push Workflow
-on: push
+name: Pull-request Workflow
+on: pull_request
 jobs: 
   job-on-windows:
     runs-on: windows-latest
