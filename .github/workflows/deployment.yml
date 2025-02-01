@@ -19,7 +19,7 @@ jobs:
           fi
 
       - name: Log Deployment Environment
-        run: echo "Deploying to $DEPLOY_ENV environment"
+        run: echo "Deploying to ${{env.DEPLOY_ENV}} environment"
 
       - name: Simulate Deployment
         run: |
