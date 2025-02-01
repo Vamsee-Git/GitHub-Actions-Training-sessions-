@@ -24,5 +24,3 @@ jobs:
       - name: Simulate Deployment
         run: |
           echo "Running deployment script for $DEPLOY_ENV..."
-          # Replace with actual deployment command, e.g.:
-          # ./deploy.sh --env=$DEPLOY_ENV
