@@ -25,5 +25,5 @@ jobs:
           fi
 
       - name: Print Environment Variable
-        run: echo "Current Branch:$GIT_BRANCH"
-        run: echo $GITHUB_ENV"
+        run: echo "Current Branch:${{env.GIT_BRANCH}}"
+
