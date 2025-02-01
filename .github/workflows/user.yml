@@ -17,4 +17,4 @@ jobs:
         run: echo "USER=${{ github.actor }}" >> $GITHUB_ENV
 
       - name: Print USER Variable
-        run: echo "Workflow triggered by:$USER"
+        run: echo "Workflow triggered by:${{env.USER}}"
