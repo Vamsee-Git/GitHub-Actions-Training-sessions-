@@ -1,0 +1,13 @@
+name: Github Contexts
+on:
+  push:
+jobs:
+  echo_github_contexts:
+    runs-on: ubuntu-latest
+    steps:
+      run: |
+      echo "${{github.action}}":
+      echo "${{github.action_path}}:
+    
+    
+  
