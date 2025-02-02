@@ -5,9 +5,11 @@ jobs:
   echo_github_contexts:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v4.2.2
     - run: |
         echo "Action is ${{github.action}}"
         echo "Action path is ${{github.action_path}}"
+        echo "${{github.action_repository}}
     
     
   
