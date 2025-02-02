@@ -9,7 +9,7 @@ jobs:
     - run: |
         echo "Action is ${{github.action}}"
         echo "Action path is ${{github.action_path}}"
-        echo "${{github.action_repository}}
+        echo "${{github.action_repository}}"
     
     
   
