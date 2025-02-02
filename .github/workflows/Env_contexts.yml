@@ -1,0 +1,17 @@
+name: Env Contexts
+env:
+  VAR: workflow
+on:
+  push:
+    branches:
+    - main
+    - feature
+jobs:
+  echo_github_contexts:
+    env:
+     VAR: Job
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "variable is ${{env.VAR}}"
+      env:
+        VAR: step
