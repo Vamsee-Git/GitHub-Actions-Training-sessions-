@@ -8,8 +8,6 @@ on:
     - feature
 jobs:
   echo_env_contexts:
-    env:
-     VAR: Job
     runs-on: ubuntu-latest
     steps:
     - run: echo "variable is ${{env.VAR}}"
