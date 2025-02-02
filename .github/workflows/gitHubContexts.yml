@@ -6,8 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: |
-        echo "${{github.action}}"
-        echo "${{github.action_path}}"
+        echo "Action is ${{github.action}}"
+        echo "Action path is ${{github.action_path}}"
     
     
   
