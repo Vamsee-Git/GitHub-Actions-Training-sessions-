@@ -1,15 +1,14 @@
 name: Input context
-run-name: Inputs | DEBUG - {{$inputs.debug}}
+run-name: Inputs | DEBUG - ${{inputs.debug}}
 on:
   workflow_dispatch:
     inputs:
       debug:
-        default: false
         type: boolean
+        default: false
 
 jobs:
   echo_data:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy build to target
-        run: echo "Debug is {{$inputs.debug}}"
+      - run: echo "Debug is ${{inputs.debug}}"
