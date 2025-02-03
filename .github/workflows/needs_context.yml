@@ -1,4 +1,4 @@
-name: Need context
+"name: Need context
 on:
   push:
     branches:
@@ -7,7 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "build is successful
+      - run: echo "build is successful"
   deploy:
     needs: build
     runs-on: ubuntu-latest
