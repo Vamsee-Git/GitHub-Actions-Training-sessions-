@@ -8,6 +8,6 @@ on:
     - feature
 jobs:
   echo_env_contexts:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
     - run: echo "variable is ${{env.VAR}}"
