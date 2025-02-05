@@ -1,0 +1,8 @@
+name: Pull-request Workflow
+on: pull_request
+jobs: 
+  job-on-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Job on windows
+        run: echo "job is running on windows"  
