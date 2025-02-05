@@ -23,7 +23,7 @@ jobs:
           "https://api.github.com/repos/${{ github.repository }}/commits/${COMMIT_SHA}/status")
          while [[ "$(echo $STATUS | jq -r '.state')" != "success" ]]; do
            echo "Waiting for status checks to pass..."
-           sleep 10
+           sleep 1
            STATUS=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
             "https://api.github.com/repos/${{ github.repository }}/commits/${COMMIT_SHA}/status")
          done
