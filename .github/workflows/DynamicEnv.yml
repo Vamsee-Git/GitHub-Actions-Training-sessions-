@@ -22,6 +22,7 @@ jobs:
 
           # Extract the status state from the response
           STATE=$(echo $COMMIT_STATUS | jq -r '.state')
+          echo $STATE
           
           if [[ "$STATE" != "success" ]]; then
             echo "Status checks failed, aborting deployment."
