@@ -1,0 +1,9 @@
+name: branch protection
+on:
+  branch_protection_rule:
+    types: [created, deleted]
+jobs:
+  echo-branch-protection:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "branch protection rule created"
